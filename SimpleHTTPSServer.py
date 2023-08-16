@@ -54,7 +54,7 @@ if __name__ == "__main__":
     # 默认参数
     useHTTPS = 0
     port = 80
-    webroot = "/tmp"
+    webroot = os.getcwd()
 
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hsp:d:", ["help", "useHTTPS", "port=", "dir="])
